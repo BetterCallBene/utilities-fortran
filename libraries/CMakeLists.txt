@@ -1,1 +1,2 @@
-add_subdirectory(Kracken)
+add_subdirectory(kracken)
+add_subdirectory(colorout)

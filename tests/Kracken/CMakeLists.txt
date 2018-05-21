@@ -1,13 +1,13 @@
 enable_language ( Fortran )
-add_executable(unit_tests
+add_executable(unit_tests_kracken
 	krackentest.F90
 )
-target_link_libraries(unit_tests
-		Kracken
+target_link_libraries(unit_tests_kracken
+		kracken
 )
 add_test(
 		NAME
-		unit_tests
+		unit_tests_kracken
 		COMMAND
-		$<TARGET_FILE:unit_tests>
+		$<TARGET_FILE:unit_tests_kracken>
 )

@@ -1,9 +1,9 @@
 from conans import ConanFile, CMake, tools
 import os
 
-class KrackenConan(ConanFile):
-	name = "kracken"
-	version = "1.0.5"
+class UtilitiesFortranConan(ConanFile):
+	name = "utilitiesfortran"
+	version = "0.0.2"
 	license = "UNLICENSE"
 	description = "command line options of Fortran programs using Unix-like syntax"
 	settings = "os", "compiler", "build_type", "arch"
@@ -24,4 +24,4 @@ class KrackenConan(ConanFile):
 		# self.run("cmake --build . %s" % cmake.build_config)
 
 	def package_info(self):
-		self.env_info.kracken_DIR = os.path.join(self.package_folder, 'setup')
+		self.env_info.utilitiesfortran_DIR = os.path.join(self.package_folder, 'setup')

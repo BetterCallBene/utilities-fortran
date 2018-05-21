@@ -2,8 +2,8 @@
 # Project
 #
 #!!! NOTE: Put name of the library here. Should match the directory name
-project(Kracken)
-set(PROJECT_PREFIX "crack")
+project(utilitiesfortran)
+set(PROJECT_PREFIX "util")
 #!!! set(EXPORT_PREFIX "swcwrap")
 #!!! string(TOLOWER "${EXPORT_PREFIX}_" TARGET_PREFIX)
 cmake_minimum_required(VERSION 3.5)

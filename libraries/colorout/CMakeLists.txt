@@ -1,13 +1,13 @@
 enable_language ( Fortran )
 
 
-add_library(kracken STATIC
-	source/M_kracken.F90
+add_library(colorout STATIC
+	source/colorout.F90
 	)
 
-add_library(${PROJECT_PREFIX}::kracken ALIAS kracken)
+add_library(${PROJECT_PREFIX}::colorout ALIAS colorout)
 	
-target_include_directories(kracken
+target_include_directories(colorout
 	PRIVATE
 		source
 	PUBLIC
@@ -17,14 +17,14 @@ target_include_directories(kracken
 
 
 
-set_target_properties(kracken PROPERTIES
+set_target_properties(colorout PROPERTIES
 	FOLDER libraries
-	OUTPUT_NAME ${PROJECT_PREFIX}-kracken
+	OUTPUT_NAME ${PROJECT_PREFIX}-colorout
 	Fortran_MODULE_DIRECTORY ${CMAKE_BINARY_DIR}/include
 )
 
 
-install(TARGETS kracken
+install(TARGETS colorout
 	EXPORT Targets
 	LIBRARY DESTINATION lib
 	ARCHIVE DESTINATION lib

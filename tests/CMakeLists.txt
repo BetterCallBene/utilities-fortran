@@ -1,1 +1,1 @@
-add_subdirectory(Kracken)
+add_subdirectory(kracken)
